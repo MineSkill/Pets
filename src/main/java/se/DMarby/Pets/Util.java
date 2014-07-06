@@ -79,7 +79,7 @@ public class Util {
             config.set("remove-in-fight", false);
         }
         if (!config.isSet("permissions_message")) {
-            config.set("permissions_message", "§cYou do not have access to this pet!");
+            config.set("permissions_message", ChatColor.RED + "You do not have access to this pet!");
         }
         PERMISSIONS_MESSAGE = config.getString("permissions_message");
         removeInFight = config.getBoolean("remove-in-fight");
